@@ -19,13 +19,16 @@ div.entries{
 
 </style>
 </head>
+	
 <body>
 <form method="post">
 <div style="position:fixed;top:0;background-color: grey;width:100%; text-align: center;color: white;"> 
 <h2>Your Orders</h2>
 </div>
+
 <div class="entries">
 <h3 style="letter-spacing:2px;">Total Summary: </h3>
+
 <?php
     foreach ($_POST as $drink=>$rate)
     {
@@ -36,6 +39,7 @@ div.entries{
         echo '<center><div>'.$drink=str_replace('_',' ',$drink).': <b>'.$rate.'</b></div></center>';
     }
 ?>
+
 </div>
 <br><br>
 
